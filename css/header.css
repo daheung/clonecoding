@@ -1,0 +1,168 @@
+.header__container {
+  width: 100%;
+  height: 60px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.header__container .header__main {
+  width: 80%;
+  height: 100%;
+  max-width: 1400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container .header__main .header__logo-container {
+  width: 170px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container .header__main .header__logo {
+  width: 112px;
+  height: 32px;
+
+  background: url("../img/주석 2026-02-06 171421.png") no-repeat center;
+  background-size: contain;
+}
+
+/* 공통 적용 */
+.header__container .header__main li {
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.header__container .header__main .header__menu-container {
+  width: auto;
+  height: 100%;
+
+  list-style: none;
+
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__container .header__main .header__menu-container li::marker {
+  content: none;
+}
+
+.header__container .header__main .header__menu-container li {
+  margin-right: 40px;
+}
+
+.header__container .header__main .header__menu-container li:first-child .header__menu-image {
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/주석 2026-02-06 172815.png") no-repeat center;
+  background-size: contain;
+  margin-right: 2px;
+}
+
+.header__container .header__main .header__etc-container {
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+
+  list-style: none;
+
+  width: auto;
+  height: 100%;
+}
+
+.header__container .header__main .header__etc-container li:hover {
+  animation-name: btn_hover;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+}
+
+.header__container .header__main .header__etc-container .header__search {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 50%;
+}
+
+.header__container .header__main .header__etc-container .header__search .header__search-image {
+  width: 20px;
+  height: 20px;
+
+  background: url("../img/주석 2026-02-06 172526.png") no-repeat center;
+  background-size: contain;
+}
+
+.header__container .header__main .header__etc-container .common-button {
+  position: relative;
+
+  width: auto;
+  height: 32px; 
+
+  box-sizing: border-box;
+  border: 1px solid #1717191f;
+  border-radius: 8px;
+
+  padding: 7px 14px;
+  margin-left: 3px;
+  margin-right: 4px;
+}
+
+.header__container .header__main .header__etc-container .common-button span {
+  position: relative;
+  bottom: 2px;
+  height: 15px;
+
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.0194em;
+  font-weight: bold;
+}
+
+.header__container .header__main .header__etc-container .header__login-up span {
+  color: #06f;
+}
+
+@keyframes btn_hover {
+  from {
+    background-color: inherit;
+  }
+
+  to {
+    background-color: rgb(240, 240, 240);
+  }
+}
