@@ -995,7 +995,7 @@
   max-height: 275.95px;
 
   gap: 20px;
-
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1117,6 +1117,56 @@
   line-height: 1.125rem;
   letter-spacing: 0.0194em;
   font-weight: 500;
+}
+
+.main__container 
+.main__content 
+.main__content-container.cur-position 
+.main__content-carousal-container 
+.main__content-carousal-innercontainer 
+.carousal__content-container
+.carousal__content-image.iter-1 {
+  background: url("../img/cur-position-1.jpg") center no-repeat;
+}
+
+.main__container 
+.main__content 
+.main__content-container.cur-position 
+.main__content-carousal-container 
+.main__content-carousal-innercontainer 
+.carousal__content-container
+.carousal__content-image.iter-2 {
+  background: url("../img/cur-position-2.jpg") center no-repeat;
+}
+
+.main__container 
+.main__content 
+.main__content-container.cur-position 
+.main__content-carousal-container 
+.main__content-carousal-innercontainer 
+.carousal__content-container
+.carousal__content-image.iter-3 {
+  background: url("../img/cur-position-3.jpg") center no-repeat;
+}
+
+.main__container 
+.main__content 
+.main__content-container.cur-position 
+.main__content-carousal-container 
+.main__content-carousal-innercontainer 
+.carousal__content-container
+.carousal__content-image.iter-4 {
+  background: url("../img/cur-position-4.jpg") center no-repeat;
+}
+
+.main__container 
+.main__content 
+.main__content-container.cur-position 
+.main__content-carousal-container 
+.main__content-carousal-innercontainer 
+.carousal__content-container
+.carousal__content-image.iter-5 {
+  background: url("../img/cur-position-5.jpg") center no-repeat;
 }
 
 /* ------------------------------ animations  ------------------------------  */
