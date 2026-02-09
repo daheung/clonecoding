@@ -1,6 +1,6 @@
-<img width="1907" height="361" alt="image" src="https://github.com/user-attachments/assets/91d1b225-6ac4-45e9-9b29-410cca453850" /># 사이트명 :
+# 사이트명 :
 - 원티드 - 일하는 사람들의 모든 가능성
-- 
+
 ## 클론코딩 기간
 - 2026.02.09 ~ 2026.02.13
 
