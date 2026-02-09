@@ -1,0 +1,17 @@
+.main__container .footer__container {
+  width: 100%;
+  height: auto;
+  
+  padding: 40px 0 16px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, .08);  
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container .footer__container .footer__innercontainer {
+  width: 1400px;
+}
