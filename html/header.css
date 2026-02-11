@@ -1,0 +1,167 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#root {
+  font-size: 14px;
+  color: #333;
+  /* background-color: #f8f8f8; */
+  line-height: 1.42857143;
+  font-family: 
+    "Pretendard Variable", 
+    "Pretendard JP Variable", 
+    "-apple-system", 
+    "system-ui",
+    "BlinkMacSystemFont", 
+    "Roboto", 
+    "Segoe UI", 
+    "Helvetica", 
+    "Arial", 
+    "Apple SD Gothic Neo", 
+    "Nanum Gothic", 
+    "Malgun Gothic", 
+    "Apple Color Emoji", 
+    "Segoe UI Emoji", 
+    "Segoe UI Symbol", 
+    "sans-serif";
+
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+}
+
+
+
+.header__navbar-overlay-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer {
+  width: 100%;
+  height: 455px;
+  flex: 1;
+  background-color: white;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+
+  margin: 0px 422px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content
+.header__navbar-explore-container {
+  width: 224px;
+  height: 100%;
+}
+
+.header__navbar-overlay-container 
+.header__navbar-overlay-innercontainer 
+.header__navbar-overlay-content 
+.header__navbar-explore-innercontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: -4px;
+  padding: 25px 8px 0px 4px;
+  
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content
+.header__navbar-explore-container li::marker {
+  content: none;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content
+.header__navbar-explore-container li:hover {
+  font-weight: bold;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content
+.header__navbar-explore-container li {
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.0194em;
+  color:  rgb(23, 23, 25);
+
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-overlay-content
+.header__navbar-explore-container li:first-child {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.vertical-divide-line {
+  width: 1px;
+  background: rgba(0, 0, 0, .12);
+  margin-left: 4px;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container {
+  flex: 1;
+  
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: .0145em;
+  line-height: 20px;
+  color: rgba(55, 56, 60, 0.612);
+
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-empty-list {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}

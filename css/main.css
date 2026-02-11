@@ -80,6 +80,7 @@
 .main__header-innerimage {
   width: 56px;
   height: 56px;
+  margin-bottom: 5px;
 
   object-fit: contain;
 }
@@ -95,6 +96,7 @@
   
   color: rgba(55, 56, 60, .61);
   font-family: inherit;
+  font-size: 0.9em;
 }
 
 
