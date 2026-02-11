@@ -1,50 +1,16 @@
-html, body, #root {
-  width: 100%;
-  height: 100%;
+.header__navbar-overlay-container.disabled {
+  visibility: hidden;
+  display: none;
 }
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-
-#root {
-  font-size: 14px;
-  color: #333;
-  /* background-color: #f8f8f8; */
-  line-height: 1.42857143;
-  font-family: 
-    "Pretendard Variable", 
-    "Pretendard JP Variable", 
-    "-apple-system", 
-    "system-ui",
-    "BlinkMacSystemFont", 
-    "Roboto", 
-    "Segoe UI", 
-    "Helvetica", 
-    "Arial", 
-    "Apple SD Gothic Neo", 
-    "Nanum Gothic", 
-    "Malgun Gothic", 
-    "Apple Color Emoji", 
-    "Segoe UI Emoji", 
-    "Segoe UI Symbol", 
-    "sans-serif";
-
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-start;
-}
-
-
-
 .header__navbar-overlay-container {
   position: absolute;
+  left: 0px;
+  top: 100%;
+
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 10;
 
   display: flex;
   flex-direction: row;
@@ -59,6 +25,8 @@ html, body, #root {
   
   display: flex;
   flex-direction: row;
+
+  z-index: 11;
 }
 
 .header__navbar-overlay-container
@@ -117,6 +85,10 @@ html, body, #root {
 .header__navbar-overlay-innercontainer
 .header__navbar-overlay-content
 .header__navbar-explore-container li {
+  min-height: 20px;
+  box-sizing: border-box;
+  display: block;
+  
   font-size: 0.9rem;
   line-height: 1.125rem;
   letter-spacing: 0.0194em;
@@ -164,4 +136,73 @@ html, body, #root {
   width: 100%;
   text-align: center;
   align-items: center;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target-list {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target.disabled {
+  visibility: hidden;
+  display: none;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  
+  padding: 25px 0px;
+  gap: 18px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+  background-color: transparent;
+}
+
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target 
+.header-nav::marker {
+  content: none;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target 
+.header-nav:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.header__navbar-overlay-container
+.header__navbar-overlay-innercontainer
+.header__navbar-list-container
+.header__navbar-target 
+.header-nav {
+  width: auto;
+  height: 20px;
+  min-width: 200px;
+  padding-left: 20px;
+  
+  flex: 1;
+
+  white-space: nowrap;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.0194em;
+  color: rgb(23, 23, 25);
 }
